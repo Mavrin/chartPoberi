@@ -1,5 +1,5 @@
 {
-  "name": "shower",
+  "name": "name",
   "version": "1.0.15",
   "license": "MIT",
   "main": "index.html",
@@ -17,8 +17,6 @@
     "template"
   ],
   "dependencies": {
-    "shower-bright": "~1.0.11",
-    "shower-core": "~1.0.7",
-    "shower-ribbon": "~1.0.11"
+    "tauCharts": "https://github.com/TargetProcess/tauCharts.git#DSL"
   }
 }

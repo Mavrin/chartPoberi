@@ -1,11 +1,20 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Chart побери.</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen.css">
+	<link rel="stylesheet" href="bower_components/tauCharts/css/default.css">
+	<script src="src/data.js"></script>
+	<script src="bower_components/underscore/underscore.js"></script>
+	<script src="bower_components/d3/d3.js"></script>
+	<script src="bower_components/tauCharts/src/class.js"></script>
+	<script src="bower_components/tauCharts/src/tau.plugins.js"></script>
+	<script src="bower_components/tauCharts/plugins/tooltip.js"></script>
+	<script src="bower_components/tauCharts/build/tauCharts.js"></script>
+
 </head>
 <body class="list">
 <header class="caption">
@@ -20,6 +29,43 @@
 		<h2>Chart побери.</h2>
 	</div>
 </section>
+<section class="slide cover" style="background: #fff;" id="effortAndCycleTime">
+
+</section>
+<style>
+	#effortAndCycleTime .color10-1 {
+		stroke: #2B81AF;
+		fill: #2B81AF;
+	}
+</style>
+<script>
+	var effortAndCycleTime = new tauChart.Chart({
+		data: tpUserStories,
+		plugins:[tau.plugins.tooltip('name', 'cycleTime', 'effort')],
+		spec: {
+			unit: {
+				type: 'COORDS.RECT',
+				guide: {
+					showGridLines: 'xy',
+					padding: {l: 56, b: 56, r: 8, t: 15},
+					x: {padding: 8, label: 'Cycle Time'},
+					y: {padding: 8, label: 'Effort'}
+				},
+				x: 'effort',
+				y: 'cycleTime',
+				unit: [
+					{
+						type: 'ELEMENT.POINT'
+					}
+				]
+			}
+		}
+	});
+	effortAndCycleTime.renderTo('#effortAndCycleTime', {
+		width: 1024,
+		height: 640
+	});
+</script>
 <section class="slide shout">
 	<div>
 		<h2>Как люди воспринимают информацию?</h2>
@@ -32,27 +78,28 @@
 </section>
 <section class="slide">
 	<div>
-		<h2>Data types</h2>
+		<h2>Типы данных</h2>
 		<ol>
-			<li>Quantitative</li>
-			<li>Ordered / Qualitative</li>
-			<li>Categorical</li>
+			<li>Количественные (Quantitative)</li>
+			<li>Упорядоченные / Качественные (Ordered / Qualitative)</li>
+			<li>Категорийные (Categorical)</li>
 		</ol>
 	</div>
 </section>
 <section class="slide">
 	<div>
-		<h2>Quantitative</h2>
-
+		<h2>Количественные</h2>
 		<p>
 			Все что может быть выражено в числах.<br>
 			Например, сколько заняло дней подготовка к выступлению 1, 5, 6 дней.
+			<br/>
+			<img height="290px" src="pictures/popugai.jpg" alt=""/>
 		</p>
 	</div>
 </section>
 <section class="slide">
 	<div>
-		<h2>Ordered / Qualitative</h2>
+		<h2>Упорядоченные / Качественные</h2>
 
 		Все что можно сравнить и упорядочить.<br>Например, как выполнил работу:
 
@@ -62,13 +109,16 @@
 			<li>- Хорошо;</li>
 			<li>- Идеально;</li>
 		</ul>
-
+		<br/>
 	</div>
+</section>
+<section class="slide cover">
+	<img width="100%" height="100%" src="pictures/sizes.jpg" alt=""/>
 </section>
 
 <section class="slide">
 	<div>
-		<h2>Categorical</h2>
+		<h2>Категорийные</h2>
 		Все остальное.:)<br>
 		Например, животные:
 		<ul style="margin:0 0 0 2em">
@@ -77,16 +127,20 @@
 			<li>- слон;</li>
 			<li>- выхухоль;</li>
 		</ul>
-
 	</div>
+</section>
+<section class="slide cover">
+	<img width="100%" height="100%" src="pictures/evolution.jpg" alt=""/>
 </section>
 <section class="slide">
 	<div>
-		<h2>Visual encoding</h2>
-		<ol>
-			<li>Planar</li>
-			<li>Retinal</li>
-		</ol>
+		<h2>Визуальное кодирование (Visual encoding)</h2>
+		Переменные: <br/>
+		<ul>
+			<li>Планарные (Planar)</li>
+			<li>Визуальные (Retinal)</li>
+		</ul>
+		<span>Jacques Bertin - <a href="http://www.amazon.com/Semiology-Graphics-Diagrams-Networks-Maps/dp/1589482611/">Semiology of Graphics</a>Semiology of Graphics</span>
 	</div>
 </section>
 <section class="slide">
@@ -97,50 +151,58 @@
 </section>
 <section class="slide">
 	<div>
-		<h2>Retinal</h2>
+		<h2>Визуальные</h2>
 		<ol>
-			<li>Size</li>
-			<li>Texture</li>
-			<li>Shape</li>
-			<li>Orientation</li>
-			<li>Color</li>
+			<li>Размер (Size)</li>
+			<li>Текстура (Texture)</li>
+			<li>Форма (Shape)</li>
+			<li>Ориентация (Orientation)</li>
+			<li>Цвет (Color)</li>
 		</ol>
 	</div>
 </section>
 <section class="slide">
 	<div>
-		<h2>Size</h2>
+		<h2>Размер</h2>
 		<img src="pictures/scale_size.jpg" alt=""/>
+		<img width="418" src="pictures/iPhone-6-Compare.jpg" alt=""/>
 	</div>
 </section>
 <section class="slide">
 	<div>
-		<h2>Texture</h2>
+		<h2>Текстура</h2>
 		<img src="pictures/scale_texture.jpg" alt=""/>
+		<img height="310" src="pictures/texture.jpg" alt=""/>
 	</div>
 </section>
 <section class="slide">
 	<div>
-		<h2>Shape</h2>
+		<h2>Форма</h2>
 		<img src="pictures/scale_shape.jpg" alt=""/>
+		<img height="310" src="pictures/shape.jpg" alt=""/>
 	</div>
 </section>
 <section class="slide">
 	<div>
-		<h2>Orientation</h2>
-		<img src="pictures/scale_orientation.jpg" alt=""/>
+		<h2>Ориентация</h2>
+		<p style="text-align: center;height: 425px;
+line-height: 425px;">
+			<img src="pictures/scale_orientation.jpg" alt=""/>
+		</p>
 	</div>
 </section>
 <section class="slide">
 	<div>
-		<h2>Color Value</h2>
+		<h2>Оттенки цвета. (Color Value)</h2>
 		<img src="pictures/scale_value.jpg" alt=""/>
+		<img width="418" src="pictures/bodoir.gif" alt=""/>
 	</div>
 </section>
 <section class="slide">
 	<div>
-		<h2>Color Hue</h2>
+		<h2>Значения цвета (Color Hue)</h2>
 		<img src="pictures/scale_category.jpg" alt=""/>
+		<img src="pictures/hue.jpg" alt=""/>
 	</div>
 </section>
 <section class="slide shout">
@@ -152,7 +214,7 @@
 </section>
 <section class="slide cover">
 	<div>
-		<img src="pictures/retinal_data_flat.jpg" alt="">
+		<img width="100%"  height="100%" src="pictures/retinal_data_flat.jpg" alt="">
 	</div>
 </section>
 <section class="slide shout">
@@ -181,7 +243,7 @@
 <section class="slide">
 	<div>
 		<h2 style="margin: 0 0 8px;"><a
-				href="http://www.nytimes.com/interactive/2012/06/11/sports/basketball/nba-shot-analysis.html">Мisualization
+				href="http://www.nytimes.com/interactive/2012/06/11/sports/basketball/nba-shot-analysis.html">Visualization
 			of basketball teams performance</a></h2>
 		<img style="width: 586px;" src="pictures/ex_basketball.jpg" alt=""/><br>
 		<span>цвет - количество очков с точки, размер - количество попыток, х,у - кординаты площадки</span>
@@ -317,14 +379,6 @@
 <section class="slide shout">
 	<div>
 		<h2>Экспериментируй.</h2>
-	</div>
-</section>
-<section class="slide">
-	<div>
-		<h2><a href="http://www.tableausoftware.com/">Tableau</a></h2>
-		<p>VISUAL ANALYTICS FOR EVERYONE<br>
-			Tableau can help anyone find
-			real answers in their data.</p>
 	</div>
 </section>
 <section class="slide shout">
