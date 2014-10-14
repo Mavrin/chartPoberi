@@ -682,6 +682,7 @@ line-height: 425px;">
 <section class="slide shout">
 	<div>
 		<h2>Grammar of graphics.</h2>
+		<span>Leland Wilkinson</span>
 		<img src="pictures/grammar.jpg" alt=""/>
 	</div>
 </section>
@@ -710,6 +711,70 @@ line-height: 425px;">
 		</ol>
 	</div>
 </section>
+<section class="slide shout">
+	<div>
+		<h2>TauCharts.</h2>
+	</div>
+</section>
+<style>
+	#bar2 .bar {
+		stroke: #2B81AF;
+		fill: #2B81AF;
+	}
+</style>
+<section class="slide cover" style="background: #fff;" id="bar2">
+
+</section>
+
+<script>
+	var facet2x1 = {
+		dimensions: {
+			month: {scaleType: 'ordinal'},
+			team: {scaleType: 'ordinal'},
+			count: {scaleType: 'linear'}
+		},
+		unit: {
+			type: 'COORDS.RECT',
+			guide: {
+				padding: {l: 104, b: 8, r: 8, t: 8},
+				y: {label: {text: 'TargetProcess Teams', padding: 80}}
+			},
+			x: null,
+			y: 'team',
+			unit: [
+				{
+					type: 'COORDS.RECT',
+					guide: {
+						padding: {l: 56, b: 32, r: 8, t: 8},
+						showGridLines: 'xy',
+						x: {label: 'Month'},
+						y: {label: {text: 'Count', padding: 36}}
+					},
+					x: 'month',
+					y: 'count',
+					unit: [
+						{
+							type: 'ELEMENT.INTERVAL'
+						}
+					]
+				}
+			]
+		}
+	};
+
+	new tauChart.Chart(
+			{
+				data: barData,
+				spec: facet2x1,
+				plugins: [
+					tau.plugins.tooltip('team', 'count', 'month'),
+					tau.plugins.highlighter()
+				]
+			}).renderTo('#bar2', {
+				width: 1024,
+				height: 640
+			});
+</script>
 <section class="slide cover">
 	<div>
 		<img width="100%" height="100%" src="pictures/code.png" alt=""/>
@@ -719,6 +784,19 @@ line-height: 425px;">
 	<div>
 		<h2 style="color: #000"> Требования.</h2>
 		<img width="100%" height="100%" src="pictures/IMG_20141002_163154.jpg" alt=""/>
+	</div>
+</section>
+<section class="slide">
+	<div>
+		<h2>Что используем</h2>
+		<ul>
+			<li class="next">d3 based</li>
+			<li class="next">ES6</li>
+			<li class="next">Mocha and Chai для тестирования</li>
+			<li class="next">Запускаем тесты с помощью karma</li>
+			<li class="next">Grunt для задач</li>
+			<li class="next">TravisCI для CI</li>
+		</ul>
 	</div>
 </section>
 <section class="slide">
