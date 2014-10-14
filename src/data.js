@@ -1071,3 +1071,259 @@ var tpUserStories = [
 		"type": "UserStory"
 	}
 ];
+
+var barData = [
+	{
+		"team": "Alaska",
+		"count": 4,
+		"month": "2013 - 10"
+	},
+	{
+		"team": "CAT",
+		"count": 3,
+		"month": "2013 - 10"
+	},
+	{
+		"team": "λ",
+		"count": 6,
+		"month": "2013 - 10"
+	},
+	{
+		"team": "CAT",
+		"count": 3,
+		"month": "2013 - 11"
+	},
+	{
+		"team": "Alaska",
+		"count": 13,
+		"month": "2013 - 11"
+	},
+	{
+		"team": "CAT",
+		"count": 6,
+		"month": "2013 - 12"
+	},
+	{
+		"team": "Alaska",
+		"count": 6,
+		"month": "2013 - 12"
+	},
+	{
+		"team": "λ",
+		"count": 4,
+		"month": "2013 - 12"
+	},
+	{
+		"team": "λ",
+		"count": 17,
+		"month": "2014 - 1"
+	},
+	{
+		"team": "CAT",
+		"count": 4,
+		"month": "2014 - 1"
+	},
+	{
+		"team": "Alaska",
+		"count": 7,
+		"month": "2014 - 1"
+	},
+	{
+		"team": "CAT",
+		"count": 6,
+		"month": "2014 - 2"
+	},
+	{
+		"team": "λ",
+		"count": 21,
+		"month": "2014 - 2"
+	},
+	{
+		"team": "Alaska",
+		"count": 3,
+		"month": "2014 - 2"
+	},
+	{
+		"team": "Alaska",
+		"count": 3,
+		"month": "2014 - 3"
+	},
+	{
+		"team": "λ",
+		"count": 18,
+		"month": "2014 - 3"
+	},
+	{
+		"team": "CAT",
+		"count": 2,
+		"month": "2014 - 3"
+	},
+	{
+		"team": "CAT",
+		"count": 9,
+		"month": "2014 - 4"
+	},
+	{
+		"team": "λ",
+		"count": 8,
+		"month": "2014 - 4"
+	},
+	{
+		"team": "λ",
+		"count": 8,
+		"month": "2014 - 5"
+	},
+	{
+		"team": "CAT",
+		"count": 6,
+		"month": "2014 - 5"
+	},
+	{
+		"team": "λ",
+		"count": 3,
+		"month": "2014 - 6"
+	},
+	{
+		"team": "Alaska",
+		"count": 7,
+		"month": "2014 - 6"
+	},
+	{
+		"team": "NEW TEAM",
+		"count": 1,
+		"month": "2014 - 6"
+	},
+	{
+		"team": "CAT",
+		"count": 8,
+		"month": "2014 - 6"
+	},
+	{
+		"team": "CAT",
+		"count": 10,
+		"month": "2014 - 7"
+	},
+	{
+		"team": "NEW TEAM",
+		"count": 1,
+		"month": "2014 - 7"
+	},
+	{
+		"team": "λ",
+		"count": 11,
+		"month": "2014 - 7"
+	},
+	{
+		"team": "Alaska",
+		"count": 14,
+		"month": "2014 - 7"
+	},
+	{
+		"team": "Alaska",
+		"count": 16,
+		"month": "2014 - 8"
+	},
+	{
+		"team": "λ",
+		"count": 10,
+		"month": "2014 - 8"
+	},
+	{
+		"team": "NEW TEAM",
+		"count": 5,
+		"month": "2014 - 8"
+	},
+	{
+		"team": "CAT",
+		"count": 12,
+		"month": "2014 - 8"
+	},
+	{
+		"team": "Alaska",
+		"count": 20,
+		"month": "2014 - 9"
+	},
+	{
+		"team": "CAT",
+		"count": 5,
+		"month": "2014 - 9"
+	},
+	{
+		"team": "λ",
+		"count": 30,
+		"month": "2014 - 9"
+	},
+	{
+		"team": "NEW TEAM",
+		"count": 1,
+		"month": "2014 - 9"
+	},
+	{
+		"team": "CAT",
+		"count": 7,
+		"month": "2014 - 10"
+	},
+	{
+		"team": "λ",
+		"count": 5,
+		"month": "2014 - 10"
+	},
+	{
+		"team": "NEW TEAM",
+		"count": 7,
+		"month": "2014 - 10"
+	},
+	{
+		"team": "Alaska",
+		"count": 6,
+		"month": "2014 - 10"
+	}
+];
+
+var browserSt= [
+	{
+		"name": "Internet Explorer",
+		"data": [
+			[
+				"9/14",
+				18.2
+			]
+		]
+	},
+	{
+		"name": "Firefox",
+		"data": [
+			[
+				"9/14",
+				16.3
+			]
+		]
+	},
+	{
+		"name": "Chrome",
+		"data": [
+			[
+				"9/14",
+				40
+			]
+		]
+	},
+	{
+		"name": "Safari",
+		"data": [
+			[
+				"9/14",
+				15.33
+			]
+		]
+	},
+	{
+		"name": "Opera",
+		"data": [
+			[
+				"9/14",
+				3.2
+			]
+		]
+	}
+];
