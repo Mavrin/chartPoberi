@@ -17,7 +17,11 @@
 	<script src="tauCharts/build/tauCharts.min.js"></script>
 	<script src="jquery/dist/jquery.min.js"></script>
 	<script src="highcharts/highcharts.js"></script>
-
+	<style>
+		.link-list {
+			font-size: 1.5em;
+		}
+	</style>
 </head>
 <body class="list">
 <header class="caption">
@@ -630,21 +634,21 @@ line-height: 425px;">
 <section class="slide">
 	<div>
 		<h2>Бесплатные</h2>
-		<ul >
-			<li><a href="http://c3js.org/">C3.js (d3 based)</a></li>
-			<li><a href="http://gionkunz.github.io/chartist-js/">Chartist (responsive)</a></li>
-			<li><a href="http://www.Plotjs.org/">http://www.Plotjs.org/ (responsive, canvas based)</a></li>
-			<li><a href="http://www.flotcharts.org/">http://www.flotcharts.org(JQuery)</a></li>
-			<li><a href="http://dc-js.github.io/dc.js/">http://dc-js.github.io/dc.js/ (d3 based)</a></li>
+		<ul class="link-list">
+			<li><a href="http://c3js.org/">C3js (использует d3 для отрисовки)</a></li>
+			<li><a href="http://gionkunz.github.io/chartist-js/">Chartist (отзывчивый, красивые анимации)</a></li>
+			<li><a href="http://www.Plotjs.org/">Plotjs (отзывчивый, рисуется на canvas)</a></li>
+			<li><a href="http://www.flotcharts.org/">Flotcharts (зависимость на JQuery)</a></li>
+			<li><a href="http://dc-js.github.io/dc.js/">Dcjs (использует d3 для отрисовки)</a></li>
 		</ul>
 	</div>
 </section>
 <section class="slide">
 	<div>
 		<h2>Платные</h2>
-		<ul >
-			<li><a href="http://www.amcharts.com/">http://www.amcharts.com/</a></li>
-			<li><a href="http://www.fusioncharts.com/">http://www.fusioncharts.com/</a></li>
+		<ul class="link-list">
+			<li><a href="http://www.amcharts.com/">Amcharts</a></li>
+			<li><a href="http://www.fusioncharts.com/">Fusioncharts</a></li>
 			<li><a href="http://www.highcharts.com/">Highcharts</a></li>
 		</ul>
 	</div>
@@ -652,8 +656,8 @@ line-height: 425px;">
 <section class="slide">
 	<div>
 		<h2>Визуальные библиотеки</h2>
-		<ul >
-			<li><a href="http://d3js.org/">http://d3js.org/</a></li>
+		<ul class="link-list" >
+			<li><a href="http://d3js.org/">D3js</a></li>
 			<li><a href="http://raphaeljs.com/">Raphaël</a></li>
 		</ul>
 	</div>
@@ -661,11 +665,11 @@ line-height: 425px;">
 <section class="slide">
 	<div>
 		<h2>Cравнение</h2>
-		<ul>
-			<li><a href="http://socialcompare.com/en/comparison/javascript-graphs-and-charts-libraries">http://socialcompare.com/en/comparison/javascript-graphs-and-charts-libraries</a></li>
-			<li><a href="http://kraskniga.blogspot.com/2012/06/comparison-of-javascript-data.html">http://kraskniga.blogspot.com/2012/06/comparison-of-javascript-data.html</a></li>
-			<li><a href="http://en.wikipedia.org/wiki/Comparison_of_JavaScript_charting_frameworks">http://en.wikipedia.org/wiki/Comparison_of_JavaScript_charting_frameworks</a></li>
-			<li><a href="http://www.fusioncharts.com/javascript-charting-comparison/">http://www.fusioncharts.com/javascript-charting-comparison/</a></li>
+		<ul class="link-list">
+			<li><a href="http://socialcompare.com/en/comparison/javascript-graphs-and-charts-libraries">Удобное сравнение на socialcompare</a></li>
+			<li><a href="http://kraskniga.blogspot.com/2012/06/comparison-of-javascript-data.html">Таблица с критерием мобильные платформы</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Comparison_of_JavaScript_charting_frameworks">Стaтья на википедии</a></li>
+			<li><a href="http://www.fusioncharts.com/javascript-charting-comparison/">Сравнение от Fusioncharts</a></li>
 		</ul>
 	</div>
 </section>
@@ -721,12 +725,6 @@ line-height: 425px;">
 		<h2>TauCharts.</h2>
 	</div>
 </section>
-<style>
-	#bar2 .bar {
-		stroke: #2B81AF;
-		fill: #2B81AF;
-	}
-</style>
 <section class="slide cover" style="background: #fff;" id="bar2">
 
 </section>
