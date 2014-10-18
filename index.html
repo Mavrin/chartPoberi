@@ -9,12 +9,12 @@
 	<link rel="stylesheet" href="bower_components/tauCharts/css/graphic-elements.css">
 	<script src="src/data.js"></script>
 	<script src="bower_components/underscore/underscore.js"></script>
-	<script src="bower_components/d3/d3.js"></script>
+	<script src="bower_components/d3/d3.min.js"></script>
 	<script src="bower_components/tauCharts/src/class.js"></script>
 	<script src="bower_components/tauCharts/src/tau.plugins.js"></script>
 	<script src="bower_components/tauCharts/plugins/tooltip.js"></script>
 	<script src="bower_components/tauCharts/plugins/highlighter.js"></script>
-	<script src="bower_components/tauCharts/build/tauCharts.js"></script>
+	<script src="bower_components/tauCharts/build/tauCharts.min.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/highcharts/highcharts.js"></script>
 
@@ -47,7 +47,7 @@
 	}
 </style>-->
 <script>
-	/*var effortAndCycleTime = new tauChart.Chart({
+	/*var effortAndCycleTime = new tauChart.Plot({
 		data: tpUserStories,
 		plugins: [tau.plugins.tooltip('name', 'cycleTime', 'effort'), tau.plugins.highlighter()],
 		spec: {
@@ -280,7 +280,7 @@ line-height: 425px;">
 	}
 </style>
 <script>
-	var effortAndCycleTime = new tauChart.Chart({
+	var effortAndCycleTime = new tauChart.Plot({
 		data: tpUserStories,
 		plugins: [tau.plugins.tooltip('name', 'cycleTime', 'effort')],
 		spec: {
@@ -363,7 +363,7 @@ line-height: 425px;">
 
 	};
 
-	new tauChart.Chart(
+	new tauChart.Plot(
 			{
 				data: barData.map(function(item){
 					var split = item.month.split('-');
@@ -431,7 +431,7 @@ line-height: 425px;">
 		}
 	};
 
-	new tauChart.Chart(
+	new tauChart.Plot(
 			{
 				data: barData,
 				spec: facet2x1,
@@ -572,7 +572,7 @@ line-height: 425px;">
 		};
 		$('#barUsage').empty();
 		//debugger
-		new tauChart.Chart(
+		new tauChart.Plot(
 				{
 					data: browserSt.map(function(item){
 						return {name:item.name, percent: item.data[0][1]}
@@ -633,7 +633,7 @@ line-height: 425px;">
 		<ul >
 			<li><a href="http://c3js.org/">C3.js (d3 based)</a></li>
 			<li><a href="http://gionkunz.github.io/chartist-js/">Chartist (responsive)</a></li>
-			<li><a href="http://www.chartjs.org/">http://www.chartjs.org/ (responsive, canvas based)</a></li>
+			<li><a href="http://www.Plotjs.org/">http://www.Plotjs.org/ (responsive, canvas based)</a></li>
 			<li><a href="http://www.flotcharts.org/">http://www.flotcharts.org(JQuery)</a></li>
 			<li><a href="http://dc-js.github.io/dc.js/">http://dc-js.github.io/dc.js/ (d3 based)</a></li>
 		</ul>
@@ -767,7 +767,7 @@ line-height: 425px;">
 		}
 	};
 
-	new tauChart.Chart(
+	new tauChart.Plot(
 			{
 				data: barData,
 				spec: facet2x1,

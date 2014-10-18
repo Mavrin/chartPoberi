@@ -17,7 +17,7 @@
     "template"
   ],
   "dependencies": {
-    "tauCharts": "https://github.com/TargetProcess/tauCharts.git#DSL",
+    "tauCharts": "https://github.com/TargetProcess/tauCharts.git#master",
     "highcharts":"latest",
     "jquery":"latest"
   }
