@@ -42,7 +42,8 @@ module.exports = function (grunt) {
 					cwd: 'bower_components/codemirror/',
 					src: [
 						'lib/codemirror.css',
-						'lib/codemirror.js'
+						'lib/codemirror.js',
+						'mode/javascript/javascript.js'
 					],
 					dest: 'temp/pres/codemirror/'
 				}, {

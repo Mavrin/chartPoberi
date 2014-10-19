@@ -28,6 +28,11 @@
 		.slide.cover {
 			background: #fff;
 		}
+		.cover .CodeMirror {
+			padding: 20px 0 20px 0;
+			width: 100%;
+			height: 100%;
+		}
 	</style>
 </head>
 <body class="list">
@@ -715,7 +720,6 @@ left: 49%;" src="pictures/grammar.jpg" alt=""/>
 			]
 		}
 	};
-
 	new tauChart.Plot(
 			{
 				data: barData,
@@ -731,68 +735,68 @@ left: 49%;" src="pictures/grammar.jpg" alt=""/>
 </script>
 <section class="slide cover">
 	<textarea name="facet" id="facet_code" cols="30" rows="10">
-		var facet2x1 = {
-		dimensions: {
-		month: {scaleType: 'ordinal'},
-		team: {scaleType: 'ordinal'},
-		count: {scaleType: 'linear'}
-		},
+	var facet2x1 = {
 		unit: {
-		type: 'COORDS.RECT',
-		guide: {
-		padding: {l: 104, b: 8, r: 8, t: 8},
-		y: {label: {text: 'TargetProcess Teams', padding: 80}}
-		},
-		x: null,
-		y: 'team',
-		unit: [
-		{
-		type: 'COORDS.RECT',
-		guide: {
-		padding: {l: 56, b: 32, r: 8, t: 8},
-		showGridLines: 'xy',
-		x: {label: 'Month'},
-		y: {label: {text: 'Count', padding: 36}}
-		},
-		x: 'month',
-		y: 'count',
-		unit: [
-		{
-		type: 'ELEMENT.INTERVAL'
+			type: 'COORDS.RECT',
+			guide: {
+				padding: {l: 104, b: 8, r: 8, t: 8},
+				y: {label: {text: 'TargetProcess Teams', padding: 80}}
+			},
+			x: null,
+			y: 'team',
+			unit: [{
+				type: 'COORDS.RECT',
+				guide: {
+					padding: {l: 56, b: 32, r: 8, t: 8},
+					showGridLines: 'xy',
+					x: {label: 'Month'},
+					y: {label: {text: 'Count', padding: 36}}
+				},
+				x: 'month',
+				y: 'count',
+				unit: [{
+					type: 'ELEMENT.INTERVAL'
+				}]
+			}]
 		}
-		]
-		}
-		]
-		}
-		};
-
-		new tauChart.Plot({
-			data: barData,
-			spec: facet2x1,
-			plugins: [
-				tau.plugins.tooltip('team', 'count', 'month'),
-				tau.plugins.highlighter()
-			]
-		})
-		.renderTo('#bar2', {
-			width: 1024,
-			height: 620
-		});
+	};
 	</textarea>
 </section>
 <script>
-	var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('facet_code'),{lineNumbers:true, mode:'javascript'});
+	var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('facet_code'),{mode:'javascript'});
+</script>
+<section class="slide cover">
+	<textarea name="facet" id="facet_code_init" cols="30" rows="10">
+		//init chart
+
+
+			new tauChart.Plot({
+				data: facetData,
+				spec: facet2x1,
+				plugins: [
+					tau.plugins.tooltip('team', 'count', 'month'),
+					tau.plugins.highlighter()
+				]
+			})
+			.renderTo('#facet', {
+				width: 1024,
+				height: 620
+			});
+	</textarea>
+</section>
+<script>
+	var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('facet_code_init'),{mode:'javascript'});
 </script>
 <section class="slide">
 	<div>
 		<h2>Что используем</h2>
-		<ul>
-			<li class="next">d3 based</li>
+		<ul style="font-size: 1.4em;" class="link-list">
+			<li class="next">d3 для отрисовки</li>
 			<li class="next">ES6</li>
-			<li class="next">Mocha and Chai для тестирования</li>
-			<li class="next">Запускаем тесты с помощью karma</li>
-			<li class="next">Grunt для задач</li>
-			<li class="next">TravisCI для CI</li>
+			<li class="next">Mocha and Chai</li>
+			<li class="next">Karma</li>
+			<li class="next">Grunt</li>
+			<li class="next">TravisCI</li>
 		</ul>
 	</div>
 </section>
