@@ -39,6 +39,14 @@ module.exports = function (grunt) {
 					dest: 'temp/pres/tauCharts/'
 				}, {
 					expand: true,
+					cwd: 'bower_components/codemirror/',
+					src: [
+						'lib/codemirror.css',
+						'lib/codemirror.js'
+					],
+					dest: 'temp/pres/codemirror/'
+				}, {
+					expand: true,
 					cwd: 'node_modules/shower-core/',
 					src: [
 						'**',
@@ -112,6 +120,9 @@ module.exports = function (grunt) {
 				}, {
 					from: /(bower_components)\/underscore/g,
 					to: 'underscore'
+				}, {
+					from: /(bower_components)\/codemirror/g,
+					to: 'codemirror'
 				}, {
 					from: /(bower_components)\/tauCharts/g,
 					to: 'tauCharts'

@@ -17,6 +17,9 @@
 	<script src="bower_components/tauCharts/build/tauCharts.min.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/highcharts/highcharts.js"></script>
+	<script src="bower_components/codemirror/lib/codemirror.js"></script>
+	<script src="bower_components/codemirror/mode/javascript/javascript.js"></script>
+	<link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css"/>
 	<style>
 		.link-list {
 			font-size: 1.5em;
@@ -723,14 +726,63 @@ left: 49%;" src="pictures/grammar.jpg" alt=""/>
 				]
 			}).renderTo('#bar2', {
 				width: 1024,
-				height: 640
+				height: 620
 			});
 </script>
 <section class="slide cover">
-	<div>
-		<img width="100%" height="100%" src="pictures/code.png" alt=""/>
-	</div>
+	<textarea name="facet" id="facet_code" cols="30" rows="10">
+		var facet2x1 = {
+		dimensions: {
+		month: {scaleType: 'ordinal'},
+		team: {scaleType: 'ordinal'},
+		count: {scaleType: 'linear'}
+		},
+		unit: {
+		type: 'COORDS.RECT',
+		guide: {
+		padding: {l: 104, b: 8, r: 8, t: 8},
+		y: {label: {text: 'TargetProcess Teams', padding: 80}}
+		},
+		x: null,
+		y: 'team',
+		unit: [
+		{
+		type: 'COORDS.RECT',
+		guide: {
+		padding: {l: 56, b: 32, r: 8, t: 8},
+		showGridLines: 'xy',
+		x: {label: 'Month'},
+		y: {label: {text: 'Count', padding: 36}}
+		},
+		x: 'month',
+		y: 'count',
+		unit: [
+		{
+		type: 'ELEMENT.INTERVAL'
+		}
+		]
+		}
+		]
+		}
+		};
+
+		new tauChart.Plot({
+			data: barData,
+			spec: facet2x1,
+			plugins: [
+				tau.plugins.tooltip('team', 'count', 'month'),
+				tau.plugins.highlighter()
+			]
+		})
+		.renderTo('#bar2', {
+			width: 1024,
+			height: 620
+		});
+	</textarea>
 </section>
+<script>
+	var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('facet_code'),{lineNumbers:true, mode:'javascript'});
+</script>
 <section class="slide">
 	<div>
 		<h2>Что используем</h2>
