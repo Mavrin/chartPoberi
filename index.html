@@ -787,6 +787,118 @@ left: 49%;" src="pictures/grammar.jpg" alt=""/>
 <script>
 	var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('facet_code_init'),{mode:'javascript'});
 </script>
+<section class="slide cover">
+	<textarea name="" id="simpleChartData" cols="30" rows="10">
+		//simple scatterplot
+		var defData = [
+			{
+				"team": "d",
+				"cycleTime": 1,
+				"effort": 1,
+				"count": 1,
+				"priority": "low"
+			}, {
+				"team": "d",
+				"cycleTime": 2,
+				"effort": 2,
+				"count": 5,
+				"priority": "low"
+			}, {
+				"team": "d",
+				"cycleTime": 3,
+				"effort": 3,
+				"count": 8,
+				"priority": "medium"
+			}
+		];
+
+	</textarea>
+</section>
+<script>
+	var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('simpleChartData'),{mode:'javascript'});
+</script>
+<section class="slide cover">
+	<textarea name="" id="simpleChart" cols="30" rows="10">
+
+
+
+
+
+		var chart = new tauChart.Chart({
+			data: defData,
+			type: 'scatterplot',
+			x: 'cycleTime',
+			y: 'effort',
+			color: 'team',
+			size: 'count'
+		});
+
+		chart.renderTo('#scatter');
+	</textarea>
+</section>
+<script>
+	var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('simpleChart'),{mode:'javascript'});
+</script>
+<section id="simpleScatterplot"  class="slide cover">
+
+</section>
+<script>
+	//simple scatterplot
+
+	var defData = [
+		{"team": "d", "cycleTime": 1, "effort": 1, "count": 1, "priority": "low"}, {
+			"team": "d",
+			"cycleTime": 2,
+			"effort": 2,
+			"count": 5,
+			"priority": "low"
+		}, {"team": "d", "cycleTime": 3, "effort": 3, "count": 8, "priority": "medium"}, {
+			"team": "d",
+			"cycleTime": 4,
+			"effort": 4,
+			"count": 3,
+			"priority": "high"
+		}, {"team": "l", "cycleTime": 2, "effort": 1, "count": 1, "priority": "low"}, {
+			"team": "l",
+			"cycleTime": 3,
+			"effort": 2,
+			"count": 5,
+			"priority": "low"
+		}, {"team": "l", "cycleTime": 4, "effort": 3, "count": 8, "priority": "medium"}, {
+			"team": "l",
+			"cycleTime": 5,
+			"effort": 4,
+			"count": 3,
+			"priority": "high"
+		},
+		{"team": "k", "cycleTime": 2, "effort": 4, "count": 1, "priority": "low"}, {
+			"team": "k",
+			"cycleTime": 3,
+			"effort": 5,
+			"count": 5,
+			"priority": "low"
+		}, {"team": "k", "cycleTime": 4, "effort": 6, "count": 8, "priority": "medium"}, {
+			"team": "k",
+			"cycleTime": 5,
+			"effort": 8,
+			"count": 3,
+			"priority": "high"
+		}];
+
+	var chart = new tauChart.Chart({
+		data: defData,
+		type: 'scatterplot',
+		x: 'cycleTime',
+		y: 'effort',
+		color: 'team',
+		size: 'count'
+	});
+
+	chart.renderTo('#simpleScatterplot',{width:1024, height:620});
+</script>
+<section class="slide cover">
+	<img src="pictures/schema.svg" alt=""/>
+</section>
 <section class="slide">
 	<div>
 		<h2>Что используем</h2>
@@ -799,9 +911,6 @@ left: 49%;" src="pictures/grammar.jpg" alt=""/>
 			<li class="next">TravisCI</li>
 		</ul>
 	</div>
-</section>
-<section class="slide cover">
-	<img src="pictures/schema.svg" alt=""/>
 </section>
 <section class="slide shout">
 	<div>
@@ -835,7 +944,12 @@ left: 49%;" src="pictures/grammar.jpg" alt=""/>
 <section class="slide">
 	<div>
 		<h2>Links</h2>
-		to do
+		<ul>
+			<li><a href="http://www.targetprocess.com/articles/visual-encoding.html">Статья о визуальном кодировании</a></li>
+			<li><a href="https://github.com/TargetProcess/tauCharts">Api tauCharts</a></li>
+			<li><a href="http://api.taucharts.com/">TauCharts</a></li>
+			<li><a href="https://www.stevefenton.co.uk/Content/Pie-Charts-Are-Bad/">Почему PIE графики плохие</a></li>
+		</ul>
 	</div>
 </section>
 <section class="slide cover">
