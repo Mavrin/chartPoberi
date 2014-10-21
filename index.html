@@ -14,6 +14,7 @@
 	<script src="bower_components/tauCharts/src/tau.plugins.js"></script>
 	<script src="bower_components/tauCharts/plugins/tooltip.js"></script>
 	<script src="bower_components/tauCharts/plugins/highlighter.js"></script>
+	<script src="src/sizePoint.js"></script>
 	<script src="bower_components/tauCharts/build/tauCharts.min.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/highcharts/highcharts.js"></script>
@@ -25,9 +26,11 @@
 			font-size: 1.5em;
 		}
 
+
 		.slide.cover {
 			background: #fff;
 		}
+
 		.cover .CodeMirror {
 			padding: 20px 0 20px 0;
 			width: 100%;
@@ -229,6 +232,7 @@
 </section>
 <section class="slide cover">
 	<img src="pictures/ex_basketball.png" alt=""/>
+
 	<h2 style="
 		position: absolute;
 		bottom: 0;
@@ -263,19 +267,25 @@
 		stroke: #2B81AF;
 		fill: #2B81AF;
 	}
+
+	#Scatterplot svg .label, #Scatterplot .tick text {
+		font-size: 45px;
+	}
+
+
 </style>
 <script>
 	var effortAndCycleTime = new tauChart.Plot({
 		data: tpUserStories,
-		plugins: [tau.plugins.tooltip('name', 'cycleTime', 'effort')],
+		plugins: [tau.plugins.tooltip('name', 'cycleTime', 'effort'), tau.plugins.sizePoint('name', 'cycleTime', 'effort')],
 		spec: {
 			unit: {
 				type: 'COORDS.RECT',
 				guide: {
 					showGridLines: 'xy',
-					padding: {l: 56, b: 56, r: 8, t: 15},
-					x: {padding: 8, label: 'Cycle Time'},
-					y: {padding: 8, label: 'Effort'}
+					padding: {l: 145, b: 100, r: 35, t: 45},
+					x: {padding: 25, label: {text: 'Cycle Time', padding: 85}, density: 60},
+					y: {padding: 30, label: {text: 'Effort', padding: 65}, density: 40}
 				},
 				x: 'effort',
 				y: 'cycleTime',
@@ -289,7 +299,7 @@
 	});
 	effortAndCycleTime.renderTo('#Scatterplot', {
 		width: 1024,
-		height: 640
+		height: 610
 	});
 </script>
 <section class="slide shout">
@@ -304,6 +314,7 @@
 	#line .color10-1 {
 		stroke: #2B81AF;
 		fill: #2B81AF;
+		stroke-width: 10px;
 	}
 </style>
 <script>
@@ -314,7 +325,7 @@
 				padding: {l: 56, b: 32, r: 8, t: 8},
 				showGridLines: 'xy',
 				x: {label: 'Month'},
-				y: {label: {text: 'Count', padding: 36}}
+				y: {label: {text: 'Count', padding: 36},density: 60}
 			},
 			x: 'month',
 			y: 'count',
@@ -331,22 +342,26 @@
 
 	new tauChart.Plot(
 			{
-				data:_.chain(barData).groupBy(function(item){
+				data: _.chain(barData).groupBy(function (item) {
 					return item.month;
-				}).reduce(function(values, item, key){
-					values.push({month:key,count:_.reduce(item,function(count,value){ return count+value.count},0)})
+				}).reduce(function (values, item, key) {
+					values.push({
+						month: key, count: _.reduce(item, function (count, value) {
+							return count + value.count
+						}, 0)
+					})
 					return values
-				},[]).value(),
+				}, []).value(),
 				spec: facet2x1,
 				plugins: [
 					tau.plugins.tooltip('count', 'month'),
 					tau.plugins.highlighter()
 				]
 			})
-	.renderTo('#line', {
-	 width: 1024,
-	 height: 625
-	 });
+			.renderTo('#line', {
+				width: 1024,
+				height: 625
+			});
 </script>
 <section class="slide shout">
 	<div>
@@ -388,12 +403,16 @@
 
 	new tauChart.Plot(
 			{
-				data:_.chain(barData).groupBy(function(item){
+				data: _.chain(barData).groupBy(function (item) {
 					return item.month;
-				}).reduce(function(values, item, key){
-					values.push({month:key,count:_.reduce(item,function(count,value){ return count+value.count},0)})
+				}).reduce(function (values, item, key) {
+					values.push({
+						month: key, count: _.reduce(item, function (count, value) {
+							return count + value.count
+						}, 0)
+					})
 					return values
-				},[]).value(),
+				}, []).value(),
 				spec: facet2x1,
 				plugins: [
 					tau.plugins.tooltip('count', 'month'),
@@ -785,7 +804,7 @@ left: 49%;" src="pictures/grammar.jpg" alt=""/>
 	</textarea>
 </section>
 <script>
-	var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('facet_code_init'),{mode:'javascript'});
+	var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('facet_code_init'), {mode: 'javascript'});
 </script>
 <section class="slide cover">
 	<textarea name="" id="simpleChartData" cols="30" rows="10">
