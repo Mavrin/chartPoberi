@@ -55,35 +55,31 @@
 		<h2>Chart побери</h2>
 	</div>
 </section>
-<section class="slide cover">
-	<div>
-		<img width="100%" height="100%" src="pictures/timeline_fix.jpg" alt=""/>
-	</div>
-</section>
 <section class="slide cover" style="background: #fff;" id="speakerByCity">
 
 </section>
 <style>
-	#effortAndCycleTime .color10-1 {
+	#speakerByCity .color10-1 {
 		stroke: #2B81AF;
 		fill: #2B81AF;
+	}
+	#speakerByCity .tick text {
+		font-size:52px;
 	}
 </style>
 <script>
 	var effortAndCycleTime = new tauChart.Plot({
-		data: speakerByCity,
-		plugins: [tau.plugins.tooltip('speaker', 'city'), tau.plugins.highlighter()],
+		data: speakerByCityGt2,
+		plugins: [tau.plugins.tooltip('speaker', 'city'), tau.plugins.highlighter(),tau.plugins.sizePoint(2.45)],
 		spec: {
 			unit: {
 				type: 'COORDS.RECT',
 				guide: {
 					showGridLines: 'xy',
-					padding: {l: 140, b: 56, r: 8, t: 15},
-					x: {padding: 8, label: 'city'},
-					y: {padding: 8, label: 'speaker'}
+					padding: {l: 310, b: 56, r: 8, t: 15}
 				},
 				x: 'city',
-				y: 'speaker',
+				y: 'name',
 				unit: [
 					{
 						type: 'ELEMENT.POINT',
@@ -282,12 +278,12 @@
 <script>
 	var effortAndCycleTime = new tauChart.Plot({
 		data: tpUserStories,
-		plugins: [tau.plugins.tooltip('name', 'cycleTime', 'effort'), tau.plugins.sizePoint('name', 'cycleTime', 'effort')],
+		plugins: [tau.plugins.tooltip('name', 'cycleTime', 'effort'), tau.plugins.sizePoint(3)],
 		spec: {
 			unit: {
 				type: 'COORDS.RECT',
 				guide: {
-					showGridLines: 'xy',
+					//showGridLines: 'xy',
 					padding: {l: 145, b: 100, r: 35, t: 45},
 					x: {padding: 25, label: {text: 'Cycle Time', padding: 85}, density: 60},
 					y: {padding: 30, label: {text: 'Effort', padding: 65}, density: 40}

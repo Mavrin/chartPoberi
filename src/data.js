@@ -1280,7 +1280,7 @@ var barData = [
 	}
 ];
 
-var browserSt= [
+var browserSt = [
 	{
 		"name": "Internet Explorer",
 		"data": [
@@ -1327,7 +1327,29 @@ var browserSt= [
 		]
 	}
 ];
-var speakerByCity = Object.keys(presentations).map(function(key){
-	return {city:/\d+\-(\w+)_.+/ig.exec(key)[1], speaker:presentations[key].speakers[0]}
+var capitalize = function(str) {
+	return str[0].toUpperCase() + str.substr(1,str.length);
+}
+var speakerByCity = Object.keys(presentations).map(function (key) {
+	var speaker = presentations[key].speakers[0];
+	var city = /\d+\-(\w+)_.+/ig.exec(key)[1];
+    return {city: capitalize(city), speaker: speaker, name:capitalize(speaker.split('-')[1]) + ' ' + speaker.split('-')[0][0].toUpperCase()+'.'}
 });
+var speakerByCityCollection = speakerByCity.reduce(function (res, item) {
+	if (!res[item.speaker]) {
+		res[item.speaker] = [];
+		res[item.speaker].push(item.city);
+	} else {
+		if (res[item.speaker].indexOf(item.city) === -1) {
+			res[item.speaker].push(item.city);
+		}
+	}
+	return res;
+}, {});
+var speakerByCityGt2 =  speakerByCity.reduce(function(res,item){
+	if(speakerByCityCollection[item.speaker].length > 1) {
+		res.push(item);
+	}
+	return res;
+},[]);
 
