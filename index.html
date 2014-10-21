@@ -22,6 +22,9 @@
 	<script src="bower_components/codemirror/mode/javascript/javascript.js"></script>
 	<link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css"/>
 	<style>
+		textarea {
+			display: none;
+		}
 		.link-list {
 			font-size: 1.5em;
 		}
@@ -753,7 +756,7 @@ left: 49%;" src="pictures/grammar.jpg" alt=""/>
 			});
 </script>
 <section class="slide cover">
-	<textarea name="facet" id="facet_code" cols="30" rows="10">
+	<textarea  name="facet" id="facet_code" cols="30" rows="10">
 	var facet2x1 = {
 		unit: {
 			type: 'COORDS.RECT',
@@ -766,8 +769,6 @@ left: 49%;" src="pictures/grammar.jpg" alt=""/>
 			unit: [{
 				type: 'COORDS.RECT',
 				guide: {
-					padding: {l: 56, b: 32, r: 8, t: 8},
-					showGridLines: 'xy',
 					x: {label: 'Month'},
 					y: {label: {text: 'Count', padding: 36}}
 				},
@@ -915,9 +916,6 @@ left: 49%;" src="pictures/grammar.jpg" alt=""/>
 
 	chart.renderTo('#simpleScatterplot',{width:1024, height:620});
 </script>
-<section class="slide cover">
-	<img src="pictures/schema.svg" alt=""/>
-</section>
 <section class="slide">
 	<div>
 		<h2>Что используем</h2>
