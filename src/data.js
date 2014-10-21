@@ -1327,3 +1327,7 @@ var browserSt= [
 		]
 	}
 ];
+var speakerByCity = Object.keys(presentations).map(function(key){
+	return {city:/\d+\-(\w+)_.+/ig.exec(key)[1], speaker:presentations[key].speakers[0]}
+});
+

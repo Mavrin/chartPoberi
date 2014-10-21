@@ -7,6 +7,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen.css">
 	<link rel="stylesheet" href="bower_components/tauCharts/css/graphic-elements.css">
+	<script src="src/presentations.js"></script>
 	<script src="src/data.js"></script>
 	<script src="bower_components/underscore/underscore.js"></script>
 	<script src="bower_components/d3/d3.min.js"></script>
@@ -59,7 +60,7 @@
 		<img width="100%" height="100%" src="pictures/timeline_fix.jpg" alt=""/>
 	</div>
 </section>
-<!--<section class="slide cover" style="background: #fff;" id="effortAndCycleTime">
+<section class="slide cover" style="background: #fff;" id="speakerByCity">
 
 </section>
 <style>
@@ -67,34 +68,35 @@
 		stroke: #2B81AF;
 		fill: #2B81AF;
 	}
-</style>-->
+</style>
 <script>
-	/*var effortAndCycleTime = new tauChart.Plot({
-	 data: tpUserStories,
-	 plugins: [tau.plugins.tooltip('name', 'cycleTime', 'effort'), tau.plugins.highlighter()],
-	 spec: {
-	 unit: {
-	 type: 'COORDS.RECT',
-	 guide: {
-	 showGridLines: 'xy',
-	 padding: {l: 56, b: 56, r: 8, t: 15},
-	 x: {padding: 8, label: 'Cycle Time'},
-	 y: {padding: 8, label: 'Effort'}
-	 },
-	 x: 'effort',
-	 y: 'cycleTime',
-	 unit: [
-	 {
-	 type: 'ELEMENT.POINT'
-	 }
-	 ]
-	 }
-	 }
-	 });
-	 effortAndCycleTime.renderTo('#effortAndCycleTime', {
-	 width: 1024,
-	 height: 640
-	 });*/
+	var effortAndCycleTime = new tauChart.Plot({
+		data: speakerByCity,
+		plugins: [tau.plugins.tooltip('speaker', 'city'), tau.plugins.highlighter()],
+		spec: {
+			unit: {
+				type: 'COORDS.RECT',
+				guide: {
+					showGridLines: 'xy',
+					padding: {l: 140, b: 56, r: 8, t: 15},
+					x: {padding: 8, label: 'city'},
+					y: {padding: 8, label: 'speaker'}
+				},
+				x: 'city',
+				y: 'speaker',
+				unit: [
+					{
+						type: 'ELEMENT.POINT',
+						color:'speaker'
+					}
+				]
+			}
+		}
+	});
+	effortAndCycleTime.renderTo('#speakerByCity', {
+		width: 1024,
+		height: 640
+	});
 </script>
 <section class="slide shout">
 	<div>
