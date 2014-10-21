@@ -16,7 +16,10 @@
    id="svg13962"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="schema.svg">
+   sodipodi:docname="schema.svg"
+   inkscape:export-filename="D:\mavrin\chartPoberi\pictures\schema.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs13964">
     <marker
@@ -378,7 +381,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="581.53332"
+     inkscape:cx="460.82009"
      inkscape:cy="348.59009"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -404,7 +407,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -450,13 +453,13 @@
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
        x="26.690376"
-       y="866.4071"
+       y="870.37292"
        id="text16888"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan16890"
          x="26.690376"
-         y="866.4071">Спека</tspan></text>
+         y="870.37292">Спека</tspan></text>
     <rect
        style="opacity:0.89024389000000004;fill:none;stroke:#000000;stroke-width:5.879;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect16886-5"
@@ -487,61 +490,68 @@
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="220"
+       x="208"
        y="817.82996"
        id="text16924"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan16926"
-         x="220"
-         y="817.82996">Построение</tspan><tspan
+         x="208"
+         y="817.82996"
+         style="font-size:40px">Построение</tspan><tspan
          sodipodi:role="line"
-         x="220"
-         y="862.82996"
-         id="tspan16928">логического</tspan><tspan
+         x="208"
+         y="867.82996"
+         id="tspan16928"
+         style="font-size:40px">логического</tspan><tspan
          sodipodi:role="line"
-         x="220"
-         y="907.82996"
-         id="tspan17748"> графа</tspan></text>
+         x="208"
+         y="917.82996"
+         id="tspan17748"
+         style="font-size:40px"> графа</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="506"
-       y="840.32996"
+       x="504"
+       y="839.89832"
        id="text16930"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan16932"
-         x="506"
-         y="840.32996">Расчет </tspan><tspan
+         x="504"
+         y="839.89832"
+         style="font-size:48px">Расчет </tspan><tspan
          sodipodi:role="line"
-         x="506"
-         y="885.32996"
-         id="tspan16934">разметки</tspan></text>
+         x="504"
+         y="899.89832"
+         id="tspan16934"
+         style="font-size:48px">разметки</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="800"
-       y="840.55847"
+       x="788"
+       y="843.08386"
        id="text16936"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan16938"
-         x="800"
-         y="840.55847">Отрисовка</tspan><tspan
+         x="788"
+         y="843.08386"
+         style="font-size:40px">Отрисовка</tspan><tspan
          sodipodi:role="line"
-         x="800"
-         y="885.55847"
-         id="tspan16940"> графика</tspan></text>
+         x="788"
+         y="893.08386"
+         id="tspan16940"
+         style="font-size:40px"> графика</tspan></text>
     <rect
-       style="opacity:0.89024389;fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="opacity:0.89024389;fill:none;stroke:#000000;stroke-width:4.78457832;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect16942"
-       width="300"
-       height="140"
-       x="378"
-       y="482.36218"
-       rx="40.599998"
-       ry="62.524002" />
+       width="362"
+       height="166"
+       x="318"
+       y="436.36218"
+       rx="48.990665"
+       ry="74.135605" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.29099452px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
        d="m 150,854.38492 c 50,0 50,0 50,0"
@@ -560,34 +570,35 @@
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="455.45697"
-       y="560.23511"
+       x="382"
+       y="540.36218"
        id="text17362"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan17364"
-         x="455.45697"
-         y="560.23511">Плагины</tspan></text>
+         x="382"
+         y="540.36218"
+         style="font-size:64px">Плагины</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend-2);stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 433.64081,621.7643 C 364.05303,753.86641 364.05303,753.86641 364.05303,753.86641 L 360,762.36218"
+       style="fill:none;stroke:#000000;stroke-width:2.06697798;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend-2)"
+       d="m 400,602.36218 c -56.9851,147.40595 -56.9851,147.40595 -56.9851,147.40595 l -3.24436,9.43799"
        id="path18510"
        inkscape:connector-curvature="0"
-       inkscape:transform-center-x="123.03316"
-       inkscape:transform-center-y="-71.422559" />
+       inkscape:transform-center-x="129.39214"
+       inkscape:transform-center-y="-63.721537" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend-2)"
-       d="M 630,762.36218 C 558.39626,633.25581 558.39626,633.25581 558.39626,633.25581 l -4.72439,-7.86213"
+       style="fill:none;stroke:#000000;stroke-width:2.71036601;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend-2)"
+       d="M 630,762.36218 C 517.42749,611.54634 517.42749,611.54634 517.42749,611.54634 L 510,602.36218"
        id="path18510-1"
        inkscape:connector-curvature="0"
-       inkscape:transform-center-x="-84.128155"
-       inkscape:transform-center-y="-97.973832" />
+       inkscape:transform-center-x="-132.27054"
+       inkscape:transform-center-y="-114.43224" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend-2)"
-       d="M 840,762.36218 C 660.57633,633.74963 660.57633,633.74963 660.57633,633.74963 l -11.38761,-7.5512"
+       style="fill:none;stroke:#000000;stroke-width:2.2744;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend-2)"
+       d="M 840,762.36218 C 642.53279,611.23526 642.53279,611.23526 642.53279,611.23526 L 630,602.36218"
        id="path18510-1-2"
        inkscape:connector-curvature="0"
-       inkscape:transform-center-x="-39.341152"
-       inkscape:transform-center-y="-204.44561" />
+       inkscape:transform-center-x="-43.294377"
+       inkscape:transform-center-y="-240.23652" />
   </g>
 </svg>

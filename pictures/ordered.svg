@@ -14,7 +14,10 @@
    id="svg8113"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="ordered.svg">
+   sodipodi:docname="ordered.svg"
+   inkscape:export-filename="D:\mavrin\chartPoberi\pictures\ordered.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs8115">
     <marker
@@ -121,7 +124,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="532.10957"
+     inkscape:cx="374.52577"
      inkscape:cy="251.05468"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -250,14 +253,14 @@
     <text
        xml:space="preserve"
        style="font-size:64px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="352.23438"
+       x="361.10938"
        y="747.79449"
        id="text9137"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan9139"
-         x="352.23438"
-         y="747.79449">Не плохо</tspan></text>
+         x="361.10938"
+         y="747.79449">Неплохо</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:64px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
@@ -281,18 +284,18 @@
          x="341.53125"
          y="1002.3622">Идеально</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
-       d="m 491.01363,630.12529 c 0,50 0,50 0,50 l 0,10"
+       style="fill:none;stroke:#000000;stroke-width:4.25090122;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
+       d="m 491.01363,622.36218 c 0,56.46926 0,56.46926 0,56.46926 l 0,11.29385"
        id="path11128"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
-       d="m 491.01363,759.57319 c 0,50 0,50 0,50 l 0,10"
+       style="fill:none;stroke:#000000;stroke-width:4.23354864;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
+       d="m 491.01363,754.36218 c 0,56.00917 0,56.00917 0,56.00917 l 0,11.20184"
        id="path11128-1"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
-       d="m 491.01363,889.02109 c 0,50 0,50 0,50 l 0,10"
+       style="fill:none;stroke:#000000;stroke-width:4.52132463;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
+       d="m 491.01363,876.36218 c 0,63.88242 0,63.88242 0,63.88242 l 0,12.77649"
        id="path11128-0"
        inkscape:connector-curvature="0" />
   </g>
